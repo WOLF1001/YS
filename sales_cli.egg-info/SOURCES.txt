@@ -1,0 +1,12 @@
+pyproject.toml
+sales_cli/__init__.py
+sales_cli/cli.py
+sales_cli/config.py
+sales_cli/kraken_client.py
+sales_cli/legion_client.py
+sales_cli.egg-info/PKG-INFO
+sales_cli.egg-info/SOURCES.txt
+sales_cli.egg-info/dependency_links.txt
+sales_cli.egg-info/entry_points.txt
+sales_cli.egg-info/requires.txt
+sales_cli.egg-info/top_level.txt
