@@ -4,6 +4,7 @@ sales_cli/cli.py
 sales_cli/config.py
 sales_cli/kraken_client.py
 sales_cli/legion_client.py
+sales_cli/slack_bot.py
 sales_cli.egg-info/PKG-INFO
 sales_cli.egg-info/SOURCES.txt
 sales_cli.egg-info/dependency_links.txt

@@ -24,6 +24,9 @@ class LegionConfig:
 class AppConfig:
     kraken: Optional[KrakenConfig] = None
     legion: Optional[LegionConfig] = None
+    slack_bot_token: Optional[str] = None
+    slack_app_token: Optional[str] = None
+    slack_dm_recipient_ids: Optional[str] = None
 
 
 def load_config(env_path: Optional[str] = None) -> AppConfig:
@@ -44,4 +47,10 @@ def load_config(env_path: Optional[str] = None) -> AppConfig:
         api_key=os.getenv("LEGION_API_KEY"),
     )
 
-    return AppConfig(kraken=kraken_cfg, legion=legion_cfg)
+    return AppConfig(
+        kraken=kraken_cfg,
+        legion=legion_cfg,
+        slack_bot_token=os.getenv("SLACK_BOT_TOKEN"),
+        slack_app_token=os.getenv("SLACK_APP_TOKEN"),
+        slack_dm_recipient_ids=os.getenv("SLACK_DM_RECIPIENT_IDS"),
+    )
