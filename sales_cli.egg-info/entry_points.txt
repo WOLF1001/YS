@@ -1,2 +1,3 @@
 [console_scripts]
 sales = sales_cli.cli:main
+slack-bot = sales_cli.slack_bot:main

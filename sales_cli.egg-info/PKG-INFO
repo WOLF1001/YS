@@ -9,3 +9,6 @@ Requires-Dist: python-dotenv>=1.0.1
 Requires-Dist: httpx>=0.27.2
 Requires-Dist: pydantic>=2.9.2
 Requires-Dist: krakenex>=2.1.0
+Requires-Dist: slack-bolt>=1.18.0
+Requires-Dist: slack-sdk>=3.26.0
+Requires-Dist: websocket-client>=1.6.0
